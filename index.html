@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>purpledog</title>
+    <link rel="stylesheet" href="./myreset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="purpledog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- 헤더 -->
+    <header class="hd">
+      <div class="hd_menu">
+        <a href="#" class="logo"
+          ><img src="./img/logo.svg" alt="퍼플독로고"
+        /></a>
+        <nav class="hd_gnb">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/정기구독icon.png" alt="정기구독icon" /><span
+                  >정기구독</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">구독소개</a></li>
+                <li><a href="#">구독방법</a></li>
+                <li><a href="#">와인 피드백</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/와인icon.png" alt="와인icon" /><span
+                  >와인</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">와인별</a></li>
+                <li><a href="#">국가별</a></li>
+                <li><a href="#">추천상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/커뮤니티icon.png" alt="커뮤니티icon" /><span
+                  >커뮤니티</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">공지및이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/회사소개icon.png" alt="회사소개icon" /><span
+                  >회사소개</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">about</a></li>
+                <li><a href="#">store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/문의icon.png" alt="문의icon" /><span
+                  >문의</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li>
+                  <a href="#">고객센터</a>
+                </li>
+                <li><a href="#">b2b문의</a></li>
+                <li><a href="#">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <a href="#"
+            ><span><i class="fa-solid fa-bars"></i></span
+          ></a>
+        </div>
+      </div>
+    </header>
+    <!-- 메인부분 -->
+    <main>
+      <!-- 구독배너 -->
+      <section class="subscribe_br">
+        <div class="subscribe_fix_br">
+          <img src="./img/고정배너.png" alt="" />
+          <a href="#"><span>구독하기</span></a>
+        </div>
+        <div class="swiper subscribe_slide_br">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide subscribe_slide_br">
+              <img src="./img/배너슬라이드1.png" alt="" />
+            </div>
+            <div class="swiper-slide subscribe_slide_br">
+              <img src="./img/배너슬라이드2.png" alt="" />
+            </div>
+            <div class="swiper-slide subscribe_slide_br">
+              <img src="./img/배너슬라이드3.png" alt="" />
+            </div>
+          </div>
+          <div class="swiper-button-next br_next"></div>
+          <div class="swiper-button-prev br_prev"></div>
+        </div>
+      </section>
+      <!-- 와인 메뉴 -->
+      <div class="menu_frame">
+        <div class="title_frame">
+          <div class="title_first"><span>Recommendation</span></div>
+          <div class="title_second">
+            <span>회원님이 좋아할 만한 와인을 추천드려요</span>
+          </div>
+        </div>
+        <div class="menu_slide">
+          <div class="swiper menu_swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_k">K</span>
+                    <img
+                      src="./img/까제스 꿔버 에메 리브잘트 1987.webp"
+                      alt="까제스 꿔버 에메 리브잘트 1987"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">조지아 레드</span>
+                      <span class="pd_info2">까제스 꿔버 에메 리브잘트</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>15%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>14-16°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p80"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p60"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p70"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>4.1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_y">Y</span>
+                    <img
+                      src="./img/플뢰르 므왈레 보르도.webp"
+                      alt="플뢰르 므왈레 보르도"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">프랑스 화이트</span>
+                      <span class="pd_info2">플뢰르 므왈레 보르도</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>11.5%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>8°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p70"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p60"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p60"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>3.9</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_g">G</span>
+                    <img
+                      src="./img/마라니 트빌리추리.webp"
+                      alt="마라니 트빌리추리"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">조지아 화이트</span>
+                      <span class="pd_info2">마라니 트빌리추리</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>12%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>8°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p60"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p70"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p40"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_c">C</span>
+                    <img
+                      src="./img/200몽제스리제르바블랑코.webp"
+                      alt="200몽제스리제르바블랑코"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">스페인 화이트</span>
+                      <span class="pd_info2">200 몽제스 리제르바 블랑코</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>13%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>8°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p90"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p80"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p30"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>4.4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_y">Y</span>
+                    <img
+                      src="./img/말비초 리제르바 카베르네 쏘비뇽.webp"
+                      alt="말비초리제르바까베르네쏘비뇽"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">아르헨티나 레드</span>
+                      <span class="pd_info2"
+                        >말비초 리제르바 까베르네 쏘비뇽</span
+                      >
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>14.5%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>16-18°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p70"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p50"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p30"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>3.8</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_b">B</span>
+                    <img
+                      src="./img/도멘 까제스 레 끌로 드 폴리 콜리우르 블랑.webp"
+                      alt="도멘 까제스 레 끌로 드 폴리 콜리우르 블랑"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">프랑스 화이트</span>
+                      <span class="pd_info2"
+                        >도멘 까제스 레 끌로 드 폴리 콜리우르 블랑</span
+                      >
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>13%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>10-12°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p60"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p60"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p20"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>3.8</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_g">G</span>
+                    <img
+                      src="./img/프렌치 독 그르나슈 로제.webp"
+                      alt="프렌치 독 그르니슈 로제"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">프랑스 로제</span>
+                      <span class="pd_info2">프렌치 독 그르나슈 로제</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>12%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>10-12°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p50"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p50"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p30"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <div class="fornt">
+                    <span class="lebel lebel_v">V</span>
+                    <img
+                      src="./img/샤또 벨뷰-카르동 뽀이약.webp"
+                      alt="샤또 벨뷰-카르몽 뽀이약"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">프랑스 레드</span>
+                      <span class="pd_info2">샤또 벨뷰-카르몽 뽀이약</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>14.5%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>17-19°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p90"></span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p70"></span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p40"></span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span><img src="./img/star.png" alt="별" /></span>
+                      <span>4.5</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next menu_next"></div>
+            <div class="swiper-button-prev menu_prev"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 카테고리 -->
+      <div class="category">
+        <ul>
+          <li class="category_icon">
+            <a href="#"
+              ><span><img src="./img//grid-even.svg" alt="전체상품" /></span
+              ><span>전체상품</span></a
+            >
+          </li>
+          <li class="category_icon">
+            <a href="#"
+              ><span><img src="./img/global.svg" alt="전체상품" /></span
+              ><span>나라별 모아보기</span></a
+            >
+          </li>
+        </ul>
+        <ul>
+          <li class="category_icon">
+            <a href="#"
+              ><span><img src="./img/wine.svg" alt="전체상품" /></span
+              ><span>와인별 모아보기</span></a
+            >
+          </li>
+          <li class="category_icon">
+            <a href="#"
+              ><span><img src="./img/gift-present.svg" alt="전체상품" /></span
+              ><span>추천상품</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- 중간배너 -->
+      <div class="event_br">
+        <a href="#">명품와인X명품작품 이벤트 안내 배너</a>
+      </div>
+
+      <!-- 리뷰 -->
+      <div class="review_frame">
+        <div class="title_frame">
+          <div class="title_first"><span>Best Review</span></div>
+          <div class="title_second">
+            <span>회원님의 후기를 남겨주세요.</span>
+          </div>
+        </div>
+        <div class="review_wrap">
+          <ul class="review">
+            <li>
+              <div>
+                <a href="#"></a>
+                <img src="./img/리뷰이미지1.webp" alt="리뷰이미지" />
+                <p>
+                  <span class="review_detail">매력있는 미국와인</span
+                  ><span class="review_like"
+                    ><i class="fa-regular fa-thumbs-up"></i>198</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#"></a>
+                <img src="./img/리뷰이미지2.webp" alt="리뷰이미지" />
+                <p>
+                  <span class="review_detail">명절전에 여유 좀 부려보네요.</span
+                  ><span class="review_like"
+                    ><i class="fa-regular fa-thumbs-up"></i>185</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#"></a>
+                <img src="./img/리뷰이미지3.webp" alt="리뷰이미지" />
+                <p>
+                  <span class="review_detail">2023년 첫 선물이 도착!!</span
+                  ><span class="review_like"
+                    ><i class="fa-regular fa-thumbs-up"></i>182</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#"></a>
+                <img src="./img/리뷰이미지4.webp" alt="리뷰이미지" />
+                <p>
+                  <span class="review_detail"
+                    >퍼플독 와인으로 신년 선물했어요</span
+                  ><span class="review_like"
+                    ><i class="fa-regular fa-thumbs-up"></i>154</span
+                  >
+                </p>
+              </div>
+            </li>
+            <li>
+              <div>
+                <a href="#"></a>
+                <img src="./img/리뷰이미지5.webp" alt="리뷰이미지" />
+                <p>
+                  <span class="review_detail">스페인의 맛이란 무엇인가</span
+                  ><span class="review_like"
+                    ><i class="fa-regular fa-thumbs-up"></i>145</span
+                  >
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="plus">
+            <a href="#"
+              ><span><i class="fa-solid fa-caret-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- 매거진 -->
+      <div class="magazine_frame">
+        <div class="title_frame">
+          <div class="title_first"><span>Magazine</span></div>
+          <div class="title_second">
+            <span>각종 와인 관련 정보를 제공합니다.</span>
+          </div>
+        </div>
+        <div class="magazine_wrap">
+          <ul class="magazine">
+            <li>
+              <div>
+                <a href="#none"></a>
+                <h2>vol.33 태양이 만들어낸 와인, 프랑스 론</h2>
+                <img src="./img/매거진이미지1.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>
+                  vol.32 다양한 산지와 A.O.C.가 존재하는 프랑스 남부&남서부
+                </h2>
+                <img src="./img/매거진이미지2.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>vol.31 루아르 계곡, 큰 강이 만들어내는 풍부한 와인</h2>
+                <img src="./img/매거진이미지3.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>
+                  Music is Wine Life : 음악이 와인의 맛에 어떤 영향을 줄까?
+                </h2>
+                <img src="./img/매거진이미지4.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>작은 것들이 주는 행복, 가족 경영 소규모 와이너리</h2>
+                <img src="./img/매거진이미지5.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>셀러 없는 와린이들을 위한 와인 보관 AtoZ</h2>
+                <img src="./img/매거진이미지6.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>The Pink</h2>
+                <img src="./img/매거진이미지7.webp" alt="매거진이미지" />
+              </div>
+            </li>
+            <li>
+              <div class="magzine">
+                <a href="#none"></a>
+                <h2>최은미 작가님 소개</h2>
+                <img src="./img/매거진이미지8.webp" alt="매거진이미지" />
+              </div>
+            </li>
+          </ul>
+          <div class="plus_m">
+            <a href="#"
+              ><span><i class="fa-solid fa-caret-right"></i></span
+            ></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".menu_swiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          520: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          960: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1180: {
+            slidesPerView: 5,
+            spaceBetween: 60,
+          },
+        },
+        navigation: {
+          nextEl: ".menu_next",
+          prevEl: ".menu_prev",
+        },
+      });
+      var swiper = new Swiper(".subscribe_slide_br", {
+        navigation: {
+          nextEl: ".br_next",
+          prevEl: ".br_prev",
+        },
+      });
+    </script>
+  </body>
+</html>
