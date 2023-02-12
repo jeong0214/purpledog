@@ -20,6 +20,11 @@
 /* header영역 */
 .hd {
   background-color: #3a3a3a;
+  position:fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
 .hd_menu {
@@ -39,17 +44,23 @@
   /* border: 1px solid white; */
   /* padding: 40px 0px; */
   position: relative;
+  /* border: 1px solid black; */
+  padding: 3rem 0rem;
 }
 .hd_gnb > ul > li:hover::before {
-  height: 1px;
+  width: 70%;
+  opacity: 1;
 }
 .hd_gnb > ul > li::before {
+  height: 1px;
   content: "";
   position: absolute;
-  width: 70%;
+  /* width: 70%; */
   /* height: 3px; */
-  background-color: #ffffff;
-  bottom: 1px;
+  background-color: var(--main_c1);
+  bottom: 35%;
+  opacity: 1;
+  transition: 0.5s;
 }
 .hd_gnb a {
   display: flex;
@@ -84,12 +95,36 @@
   overflow: hidden;
   transition: 0.3s;
   /* display: none; */
-  margin-top: 43px;
+  margin-top: 3.1rem;
+  z-index: 100;
 }
 .hd_sub li {
   padding: 0.5rem 2rem;
   background-color: #eaeaea;
   /* display: none; */
+  position: relative;
+  /* border: 1px solid black; */
+}
+.hd_sub li a{
+  color: var(--main_c1);
+  
+}
+.hd_sub li:hover::before{
+  opacity: 1;
+}
+.hd_sub li::before{
+  content: "";
+  position: absolute;
+  background-color: var(--main_c1);
+  height: 1px;
+  bottom: 7px;
+  /* transform: translateX(50%); */
+  width: 60%;
+  display: flex;
+  opacity: 0;
+  transition: 0.3s;
+  justify-content: center;
+  align-items: center;
 }
 .icons {
   /* text-align: right; */
@@ -121,6 +156,7 @@
 main {
   /* max-width: var(--mw); */
   /* position: relative; */
+  margin-top: 18vh;
 }
 /* 구독배너 */
 
@@ -364,7 +400,48 @@ main {
   display: inline-block;
   /* border: 1px solid white; */
 }
+.star_Rating{
+  display: flex
+  /* position: relative; */
+}
+.star_wrap{
+  /* border:1px solid red; */
+  width: 100px;
+  font-size: 13px
+  /* width: 120px; */
+}
+.star_back{
+  position: absolute;
+  width: 100px;
+  overflow: hidden;
+  color: var(--gray_ea);
+  white-space: nowrap;
+}
+.star{
+  color: yellow;
+  position: absolute;
 
+  overflow: hidden;
+  white-space: nowrap;
+}
+.star1{
+  width:0px;
+}
+.star2{
+  width:35px;
+}
+.star3{
+  width: 55px;
+}
+.star4{
+  width: 75px;
+}
+.star45{
+  width: 84px;
+}
+.star5{
+  width: 100px;
+}
 .grap {
   /* border: 1px solid gray; */
   display: flex;
@@ -385,7 +462,8 @@ main {
   position: absolute;
   /* width: 80%; */
   height: 100%;
-  background-color: #44e0ea;
+  box-shadow: 3px 3px 3px inset #137e8631;
+  background-color: #50ebf7;
 }
 .p90::before {
   width: 90%;
@@ -418,6 +496,25 @@ main {
     flex-direction: column;
   }
 }
+@media (min-width: 541px) {
+  .category_icon{
+    margin-left: 3.5rem;
+  }
+  .category_icon img{
+    /* width: 60%; */
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .category_icon {
+    margin-left: 1.5rem;
+  }
+  .category_icon img{
+    width: 60%;
+    padding: 1rem;
+  }
+}
 .category {
   max-width: var(--mw);
   margin: auto;
@@ -430,7 +527,7 @@ main {
   align-items: center;
 }
 .category_icon {
-  margin-left: 3.5rem;
+  /* margin-left: 3.5rem; */
   display: block;
   float: left;
   /* padding: 70px 0; */
@@ -452,7 +549,7 @@ main {
   /* vertical-align: top; */
   margin: 0 1rem;
   border-radius: 50%;
-  padding: 2rem;
+  /* padding: 2rem; */
   overflow: visible;
   background-color: var(--gray_d9);
 }
@@ -469,7 +566,7 @@ main {
 /* 중간배너 */
 @media (max-width: 1080px) {
   .event_br {
-    background-image: url(./img/고정배너이미지\ mw.png);
+    background-image: url(./img/middlebrmw.png);
   }
 }
 .event_br {
@@ -479,8 +576,9 @@ main {
   height: 220px;
   display: block;
   margin-top: 100px;
-  background-image: url(./img/퍼플독\ 중간\ 배너1\ 1.png);
+  /* background-image: url(./img/middlebr.png); */
   background-position: center;
+  /* background-repeat: no-repeat; */
 }
 .event_br a {
   position: absolute;
@@ -489,10 +587,22 @@ main {
   color: transparent;
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 851px) {
+  .event_br {
+    background-image: url(./img/middlebr.png
+    );
+  }
+}
+@media (max-width: 850px) {
+.event_br {
+  background-image: url(./img/middlebrmw.png) ;
+  height: 500px;
+}
 }
 /* 리뷰 */
-
+@media (max-width:1220px){.review5{display: none;}}
+@media (max-width:1000px){.review4{display: none;}}
+@media (max-width:760px){.review3{display: none;}}
 .review_frame {
   max-width: var(--mw);
   margin: 100px auto;
@@ -504,14 +614,16 @@ main {
 /* 리뷰내용 */
 .review {
   display: flex;
+  width: 100%;
 }
 .review li {
-  margin-right: 3rem;
+  margin-right: auto;
   width: 230px;
   height: 230px;
   overflow: hidden;
   position: relative;
   border-radius: 0.8rem;
+  box-shadow: 3px 3px 5px #0000006b;
 }
 .review div {
   position: absolute;
@@ -594,6 +706,15 @@ main {
   color: #3c363fc9;
 }
 /* 매거진 */
+@media (max-width:1030px) {
+  .magazine8{
+    display: none;
+  }
+}
+@media (max-width:920px){.magazine7{display: none;}}
+@media (max-width:785px){.magazine6{display: none;}}
+@media (max-width:670px){.magazine5{display: none;}}
+@media (max-width:550px){.magazine4{display: none;}}
 .magazine_frame {
   max-width: var(--mw);
   margin: auto;
@@ -604,12 +725,14 @@ main {
 }
 .magazine {
   display: flex;
+  width: 100%;
 }
+
 .magazine li {
   width: 120px;
   height: 150px;
   position: relative;
-  margin-right: 3.4rem;
+  margin-right: auto;
 }
 .magazine div {
   width: 100%;
@@ -629,6 +752,9 @@ main {
 .magazine img {
   width: 100%;
   height: 85%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px #0000006b;
 }
 
 .plus_m {
@@ -662,7 +788,8 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 85%;
+  bottom: 0px;
   background-color: var(--gray_ea);
   z-index: 1;
   opacity: 0;
@@ -673,3 +800,53 @@ main {
 .magazine li:hover::before {
   opacity: 0.2;
 }
+footer {
+  margin-top: 200px;
+  background-color: #3a3a3a;
+  height: 20vh;
+}
+.footer_wrap {
+  margin: 0 auto;
+  max-width: var(--mw);
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer_detail1{
+  display: flex;
+  flex-direction: column;
+  color: var(--font_c1);
+  font-family: var(--font);
+  font-size: 0.75rem;
+}
+.footer_detail1 img{
+  width: 82px;
+  padding: 1rem 0 2rem;
+
+}
+
+.footer_detail2{ 
+  margin-top: 1.5rem;
+  text-align: right;
+  /* position: relative; */
+  display: flex;
+}
+
+.footer_detail2 .footer_link a {
+  color: var(--font_c1);
+}
+.footer_detail2 .footer_icon {
+  /* text-align: left; */
+}
+.footer_detail2 .footer_icon a{
+  color: var(--font_c1);
+  font-size: 2rem;
+}
+.footer_wrap .qrcode{
+  margin-left: 0.4rem;
+  width: 115px;
+  height: 115px;
+  
+} 
