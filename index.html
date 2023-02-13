@@ -18,10 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="./login.js" defer></script>
   </head>
   <body>
-    <!-- 로그인 팝업 -->
-    
     <!-- 헤더 -->
     <header class="hd">
       <div class="hd_menu">
@@ -95,7 +94,7 @@
         </nav>
         <div class="icons">
           <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <a href="#"><i class="fa-regular fa-user"></i></a>
+          <i id="btn-modal" class="fa-regular fa-user"></i>
           <a href="#"
             ><span><i class="fa-solid fa-bars"></i></span
           ></a>
@@ -198,10 +197,7 @@
                 <div class="wine">
                   <div class="fornt">
                     <span class="lebel lebel_y">Y</span>
-                    <img
-                      src="./img/wine2.webp"
-                      alt="플뢰르 므왈레 보르도"
-                    />
+                    <img src="./img/wine2.webp" alt="플뢰르 므왈레 보르도" />
                     <div class="pd_detail">
                       <span class="pd_info1">프랑스 화이트</span>
                       <span class="pd_info2">플뢰르 므왈레 보르도</span>
@@ -255,10 +251,7 @@
                 <div class="wine">
                   <div class="fornt">
                     <span class="lebel lebel_g">G</span>
-                    <img
-                      src="./img/wine3.webp"
-                      alt="마라니 트빌리추리"
-                    />
+                    <img src="./img/wine3.webp" alt="마라니 트빌리추리" />
                     <div class="pd_detail">
                       <span class="pd_info1">조지아 화이트</span>
                       <span class="pd_info2">마라니 트빌리추리</span>
@@ -312,10 +305,7 @@
                 <div class="wine">
                   <div class="fornt">
                     <span class="lebel lebel_c">C</span>
-                    <img
-                      src="./img/wine4.webp"
-                      alt="200몽제스리제르바블랑코"
-                    />
+                    <img src="./img/wine4.webp" alt="200몽제스리제르바블랑코" />
                     <div class="pd_detail">
                       <span class="pd_info1">스페인 화이트</span>
                       <span class="pd_info2">200 몽제스 리제르바 블랑코</span>
@@ -352,7 +342,7 @@
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="star star4">
+                        <div class="star star4_5">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
@@ -487,10 +477,7 @@
                 <div class="wine">
                   <div class="fornt">
                     <span class="lebel lebel_g">G</span>
-                    <img
-                      src="./img/wine7.webp"
-                      alt="프렌치 독 그르니슈 로제"
-                    />
+                    <img src="./img/wine7.webp" alt="프렌치 독 그르니슈 로제" />
                     <div class="pd_detail">
                       <span class="pd_info1">프랑스 로제</span>
                       <span class="pd_info2">프렌치 독 그르나슈 로제</span>
@@ -544,10 +531,7 @@
                 <div class="wine">
                   <div class="fornt">
                     <span class="lebel lebel_v">V</span>
-                    <img
-                      src="./img/wine8.webp"
-                      alt="샤또 벨뷰-카르몽 뽀이약"
-                    />
+                    <img src="./img/wine8.webp" alt="샤또 벨뷰-카르몽 뽀이약" />
                     <div class="pd_detail">
                       <span class="pd_info1">프랑스 레드</span>
                       <span class="pd_info2">샤또 벨뷰-카르몽 뽀이약</span>
@@ -584,7 +568,7 @@
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                         </div>
-                        <div class="star star45">
+                        <div class="star star4_5">
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
                           <i class="fa-solid fa-star"></i>
@@ -650,7 +634,7 @@
         </div>
         <div class="review_wrap">
           <ul class="review">
-            <li class="review1" >
+            <li class="review1">
               <div>
                 <a href="#"></a>
                 <img src="./img/review1.webp" alt="리뷰이미지" />
@@ -753,7 +737,7 @@
               </div>
             </li>
             <li class="magazine4">
-              <div >
+              <div>
                 <a href="#none"></a>
                 <h2>
                   Music is Wine Life : 음악이 와인의 맛에 어떤 영향을 줄까?
@@ -801,13 +785,15 @@
     <footer>
       <div class="footer_wrap">
         <div class="footer_detail1">
-        <img src="./img/Group.svg" alt="퍼플독로고">
-        <span>
-          (주)퍼플독 대표 : 박재정 법인등록번호 : 110111-6925824 <br>
-          사업자번호 : 215-87-92078 사업자번호(지점, 퍼플독 홍대) : 557-85-01671 통신판매업신고 : 2019-서울송파-2561 <br>
-          본사 : 서울특별시 강남구 테헤란로 521, 파르나스타워 29층 대표번호 : 02 6933-4772 ~ 3 <br>
-          운영시간(한국) 09:30 ~ 18:30 주말/공휴일 휴무
-        </span>
+          <img src="./img/Group.svg" alt="퍼플독로고" />
+          <span>
+            (주)퍼플독 대표 : 박재정 법인등록번호 : 110111-6925824 <br />
+            사업자번호 : 215-87-92078 사업자번호(지점, 퍼플독 홍대) :
+            557-85-01671 통신판매업신고 : 2019-서울송파-2561 <br />
+            본사 : 서울특별시 강남구 테헤란로 521, 파르나스타워 29층 대표번호 :
+            02 6933-4772 ~ 3 <br />
+            운영시간(한국) 09:30 ~ 18:30 주말/공휴일 휴무
+          </span>
         </div>
         <div class="footer_detail2">
           <div class="footer_link">
@@ -820,14 +806,46 @@
               <a href="#"><i class="fa-brands fa-instagram"></i></a>
             </div>
           </div>
-          <img class="qrcode" src="./img/qrcode.svg" alt="QR코드">
+          <img class="qrcode" src="./img/qrcode.svg" alt="QR코드" />
         </div>
       </div>
     </footer>
+    <!-- 로그인 팝업 -->
+    <div id="modal" class="login_frame">
+      <div class="login_wrap">
+        <div class="login_page">
+          <div class="signin">
+            <h2>sign in</h2>
+            <form class="padding">
+              <input type="text" placeholder="username" />
+              <input type="text" placeholder="password" />
+              <label for="remember" class="checkbox">
+                <input type="checkbox" id="remember" />remember me
+              </label>
+              <button id="login" class="button bt_sub">login</button>
+            </form>
+          </div>
+        </div>
+        <div class="login_page_r">
+          <i id="close" class="fa-solid fa-xmark"></i>
+          <img
+            class="purpledoglogo"
+            src="./img/purpledoglogo.png"
+            alt="퍼플독 로고"
+          />
+          <button class="button button_r" id="singup">SIGN UP</button>
+          <div class="login_icon">
+            <a href="#"><img src="./img/navericon.png" alt="네이버" /></a>
+            <a href="#"><img src="./img/kakaoicon.png" alt="카카오" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
+      // 슬라이드영역
       var swiper = new Swiper(".menu_swiper", {
         slidesPerView: 1.5,
         spaceBetween: 10,
