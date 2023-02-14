@@ -1043,14 +1043,21 @@
       // 슬라이드영역
       var swiper = new Swiper(".menu_swiper", {
         slidesPerView: 1,
-        spaceBetween: 10,
-
+        spaceBetween: 30,
+        // centeredSlides: true,
+        // loop: true,
+        // loopAdditionalSlides: 1,
+        rewind: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         breakpoints: {
-          520: {
+          540: {
             slidesPerView: 2,
             spaceBetween: 10,
           },
