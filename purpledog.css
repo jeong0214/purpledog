@@ -68,9 +68,14 @@
   padding: 0rem 4rem 0 0.3rem;
   text-align: center;
 }
+.hd_gnb > ul > li:hover img {
+  filter: invert(44%) sepia(60%) saturate(381%) hue-rotate(266deg)
+    brightness(87%) contrast(87%);
+}
 .hd_gnb > ul > li:hover span {
   color: var(--main_c1);
 }
+
 .hd_gnb > ul > li:hover > .hd_sub {
   height: 120px;
 }
@@ -115,6 +120,7 @@
   color: var(--font_c1);
   padding: 0.1rem;
   font-size: 30px;
+  cursor: pointer;
 }
 .icons span {
   display: none;
@@ -134,9 +140,59 @@
   }
 }
 
+#search_modal.on {
+  display: flex;
+}
+#search_modal {
+  /* margin-top: 7.2rem; */
+  z-index: 99;
+  height: 10vh;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateY(-7.4rem); */
+  background-color: #3a3a3a;
+  position: fixed;
+  border-top: 1px solid var(--gray_AE);
+}
+.search_inner {
+  /* margin: auto; */
+}
+.search_form {
+  max-width: var(--mw);
+  display: flex;
+  width: 400px;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.search_input {
+  width: 100%;
+  background-color: #3a3a3a;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+  padding: 9px;
+  background-image: url(./img/icon_mag.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.search_input::placeholder {
+  color: var(--font_c1);
+  letter-spacing: 3px;
+  font-size: 1rem;
+}
+.search_input:focus {
+  outline: none;
+  color: var(--font_c1);
+  border-bottom: 1px solid #ffffff;
+  font-size: 0.8rem;
+  transition: 0.8s all ease;
+}
+
 /* main 영역 */
 main {
-  margin-top: 18vh;
+  margin-top: 15rem;
 }
 /* 구독배너 */
 
@@ -256,7 +312,11 @@ main {
   overflow: hidden;
   border-radius: 1rem;
 }
-.wine > div {
+.wine > a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .fornt {
@@ -382,6 +442,10 @@ main {
   color: var(--gray_ea);
   white-space: nowrap;
 }
+
+.star_Rating span:first-of-type {
+  margin-right: 0.5rem;
+}
 .star {
   color: #ffd500;
   position: absolute;
@@ -411,20 +475,26 @@ main {
   display: flex;
   flex-direction: column;
 }
-.grap span:last-of-type {
+.grap span:nth-of-type(2) {
   background-color: #eaeaea;
   border-radius: 20px;
   height: 10px;
   position: relative;
   overflow: hidden;
-  margin-bottom: 1rem;
+}
+.grap span:nth-of-type(3) {
+  text-align: justify;
+  text-align-last: justify;
+  color: var(--gray_AE);
+  font-size: 0.7rem;
+  margin-bottom: 0.5rem;
 }
 
-.grap span:last-of-type::before {
+.grap span:nth-child(2)::before {
   content: "";
   position: absolute;
   height: 100%;
-  box-shadow: 3px 3px 3px inset #137e8631;
+  box-shadow: 1px 1px 3px inset #a12da133;
   background-color: #9325b886;
 }
 .p90::before {
@@ -594,23 +664,15 @@ main {
   position: relative;
   border-radius: 0.8rem;
   box-shadow: 2px 2px 10px #0000006b;
+  cursor: pointer;
 }
 .review div {
   position: absolute;
   width: 100%;
   height: 100%;
 }
-.review li::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: var(--gray_ea);
-  z-index: 1;
-  opacity: 0;
-}
-.review li:hover::before {
-  opacity: 0.2;
+.review li:hover {
+  filter: brightness(80%);
 }
 .review div a {
   position: absolute;
@@ -777,21 +839,9 @@ main {
   height: 100%;
   z-index: 10;
 }
-.magazine li::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 85%;
-  bottom: 0px;
-  background-color: var(--gray_ea);
-  z-index: 1;
-  opacity: 0;
-}
-.magazine li:hover h2 {
-  color: var(--font_c3);
-}
-.magazine li:hover::before {
-  opacity: 0.2;
+
+.magazine li:hover {
+  opacity: 0.8;
 }
 footer {
   margin-top: 200px;
@@ -966,7 +1016,7 @@ button:hover {
   margin-top: 25px;
   padding: 12px;
 }
-input {
+.login_input {
   background-color: var(--main_c3);
   width: 85%;
   color: var(--gray_ea);
@@ -975,17 +1025,17 @@ input {
   padding: 9px;
   margin: 7px;
 }
-input::placeholder {
+.login_input::placeholder {
   color: var(--font_c1);
   letter-spacing: 1px;
   font-size: 1rem;
   font-weight: 200;
 }
-input:focus {
+.login_input:focus {
   outline: none;
   font-size: 1rem;
 }
-input:focus::placeholder {
+.login_input:focus::placeholder {
   opacity: 0;
 }
 label {
@@ -995,7 +1045,7 @@ label {
   font-size: 0.9rem;
   letter-spacing: 1px;
 }
-.checkbox input {
+.checkbox .checkbox_input {
   width: 10px;
   border: 1px solid white;
   position: relative;
@@ -1003,6 +1053,102 @@ label {
   white-space: nowrap;
 }
 
-input[type="checkbox"] {
+.checkbox_input[type="checkbox"] {
   width: 15px;
+}
+
+/* 리뷰 모달 */
+#review_overlay_m.on {
+  display: flex;
+}
+#review_overlay_m {
+  position: fixed;
+  display: none;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.185);
+}
+.review_modal {
+  display: flex;
+  width: 800px;
+  height: 500px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.review_img {
+  background-color: #000000;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+}
+.review_img img {
+  width: 100%;
+}
+.review_detail_M {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  font-family: var(--font);
+  background-color: #ffffff;
+}
+.report_function {
+  text-align: right;
+  width: 100%;
+  height: 5%;
+  margin-bottom: 1rem;
+  color: var(--font_c3);
+  cursor: pointer;
+}
+.review_detail_M h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 10%;
+  width: 100%;
+}
+.review_detail_M p {
+  width: 100%;
+  height: 60%;
+  display: -webkit-box;
+  -webkit-line-clamp: 14;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: normal;
+  font-weight: 400;
+
+  margin-bottom: 2.3rem;
+}
+.review_member_wrap {
+  width: 100%;
+  height: 10%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.review_member {
+  display: flex;
+}
+.review_member img {
+  height: 100%;
+}
+
+.review_member_wrap .member_name {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.review_member_wrap .review_like_m {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }

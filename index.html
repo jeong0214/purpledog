@@ -19,6 +19,8 @@
       referrerpolicy="no-referrer"
     />
     <script src="./login.js" defer></script>
+    <script src="./review.js" defer></script>
+    <script src="./search.js" defer></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -93,11 +95,25 @@
           </ul>
         </nav>
         <div class="icons">
-          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-          <i id="btn-modal" class="fa-regular fa-user"></i>
-          <a href="#"
-            ><span><i class="fa-solid fa-bars"></i></span
-          ></a>
+          <i
+            id="btn-search"
+            class="fa-solid fa-magnifying-glass"
+            title="검색"
+          ></i>
+          <i id="btn-modal" class="fa-regular fa-user" title="로그인"></i>
+
+          <span><i class="fa-solid fa-bars" title="전체메뉴"></i></span>
+        </div>
+      </div>
+      <div id="search_modal" class="hd_search_menu">
+        <div class="search_inner">
+          <form class="search_form">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="찾으시는 와인이 있으신가요?"
+            />
+          </form>
         </div>
       </div>
     </header>
@@ -106,7 +122,7 @@
       <!-- 구독배너 -->
       <section class="subscribe_br">
         <div class="subscribe_fix_br">
-          <img src="./img/fixbr.png" alt="" />
+          <img src="./img/fixbr.png" alt="고정배너이미지" />
           <a href="#"><span>구독하기</span></a>
         </div>
         <div class="swiper subscribe_slide_br">
@@ -138,6 +154,7 @@
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_k">K</span>
                     <img
@@ -161,13 +178,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p80"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
-                        <span>산미</span><span class="p60"></span>
+                        <span>산미</span><span class="p60"></span
+                        ><span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p70"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -195,6 +215,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_y">Y</span>
                     <img src="./img/wine2.webp" alt="플뢰르 므왈레 보르도" />
@@ -215,13 +236,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p70"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p60"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p60"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -249,6 +273,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_g">G</span>
                     <img src="./img/wine3.webp" alt="마라니 트빌리추리" />
@@ -269,13 +294,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p60"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p70"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p40"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -303,6 +331,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_c">C</span>
                     <img src="./img/wine4.webp" alt="200몽제스리제르바블랑코" />
@@ -323,13 +352,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p90"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p80"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p30"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -357,6 +389,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_y">Y</span>
                     <img
@@ -382,13 +415,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p70"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p50"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p30"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -416,6 +452,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_b">B</span>
                     <img
@@ -441,13 +478,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p60"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p60"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p20"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -475,6 +515,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_g">G</span>
                     <img src="./img/wine7.webp" alt="프렌치 독 그르니슈 로제" />
@@ -495,13 +536,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p50"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p50"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p30"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -529,6 +573,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="wine">
+                  <a href="#none"></a>
                   <div class="fornt">
                     <span class="lebel lebel_v">V</span>
                     <img src="./img/wine8.webp" alt="샤또 벨뷰-카르몽 뽀이약" />
@@ -549,13 +594,16 @@
                       <p class="grap text03">
                         <span>바디감</span>
                         <span class="p90"></span>
+                        <span>가벼움 무거움</span>
                       </p>
 
                       <p class="grap text04">
                         <span>산미</span><span class="p70"></span>
+                        <span>낮음 높음</span>
                       </p>
                       <p class="grap text05">
                         <span>당도</span><span class="p40"></span>
+                        <span>낮음 높음</span>
                       </p>
                     </div>
                     <div class="star_Rating">
@@ -592,13 +640,13 @@
       <div class="category">
         <ul>
           <li class="category_icon">
-            <a href="#"
+            <a href="#none"
               ><span><img src="./img//grid-even.svg" alt="전체상품" /></span
               ><span>전체상품</span></a
             >
           </li>
           <li class="category_icon">
-            <a href="#"
+            <a href="#none"
               ><span><img src="./img/global.svg" alt="전체상품" /></span
               ><span>나라별 모아보기</span></a
             >
@@ -606,13 +654,13 @@
         </ul>
         <ul>
           <li class="category_icon">
-            <a href="#"
+            <a href="#none"
               ><span><img src="./img/wine.svg" alt="전체상품" /></span
               ><span>와인별 모아보기</span></a
             >
           </li>
           <li class="category_icon">
-            <a href="#"
+            <a href="#none"
               ><span><img src="./img/gift-present.svg" alt="전체상품" /></span
               ><span>추천상품</span></a
             >
@@ -634,9 +682,8 @@
         </div>
         <div class="review_wrap">
           <ul class="review">
-            <li class="review1">
+            <li id="btn-review" class="review1">
               <div>
-                <a href="#"></a>
                 <img src="./img/review1.webp" alt="리뷰이미지" />
                 <p>
                   <span class="review_detail">매력있는 미국와인</span
@@ -648,7 +695,6 @@
             </li>
             <li class="review2">
               <div>
-                <a href="#"></a>
                 <img src="./img/review2.webp" alt="리뷰이미지" />
                 <p>
                   <span class="review_detail">명절전에 여유 좀 부려보네요.</span
@@ -660,7 +706,6 @@
             </li>
             <li class="review3">
               <div>
-                <a href="#"></a>
                 <img src="./img/review3.webp" alt="리뷰이미지" />
                 <p>
                   <span class="review_detail">2023년 첫 선물이 도착!!</span
@@ -672,7 +717,6 @@
             </li>
             <li class="review4">
               <div>
-                <a href="#"></a>
                 <img src="./img/review4.webp" alt="리뷰이미지" />
                 <p>
                   <span class="review_detail"
@@ -685,7 +729,6 @@
             </li>
             <li class="review5">
               <div>
-                <a href="#"></a>
                 <img src="./img/review5.webp" alt="리뷰이미지" />
                 <p>
                   <span class="review_detail">스페인의 맛이란 무엇인가</span
@@ -696,7 +739,7 @@
               </div>
             </li>
           </ul>
-          <div class="plus">
+          <div class="plus" title="더보기">
             <a href="#"
               ><span><i class="fa-solid fa-caret-right"></i></span
             ></a>
@@ -774,7 +817,7 @@
               </div>
             </li>
           </ul>
-          <div class="plus_m">
+          <div class="plus_m" title="더보기">
             <a href="#"
               ><span><i class="fa-solid fa-caret-right"></i></span
             ></a>
@@ -817,10 +860,14 @@
           <div class="signin">
             <h2>sign in</h2>
             <form class="padding">
-              <input type="text" placeholder="username" />
-              <input type="text" placeholder="password" />
+              <input class="login_input" type="text" placeholder="username" />
+              <input class="login_input" type="text" placeholder="password" />
               <label for="remember" class="checkbox">
-                <input type="checkbox" id="remember" />remember me
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  id="remember"
+                />remember me
               </label>
               <button id="login" class="button bt_sub">login</button>
             </form>
@@ -841,13 +888,161 @@
         </div>
       </div>
     </div>
+    <!-- 리뷰 모달 -->
+    <div id="review_overlay_m" class="review_overlay">
+      <div class="review_modal">
+        <div class="review_img">
+          <img src="./img/review1.webp" alt="리뷰이미지" />
+        </div>
+        <div class="review_detail_M">
+          <span class="report_function">신고 차단</span>
+          <h2>매력있는 미국 와인</h2>
+          <p>
+            처음엔 라벨 디자인에 눈이 확 사로잡혀서 홀린 듯이 픽했던 리슬링 🥺!!
+            <br />
+            <br />
+            평소에 리슬링 품종을 많이 접해보진 않았지만 이 와인은 뭔가 다른 거
+            같은데... 이런 느낌이 강하게 왔던 와인이라서 함께 와인을 먹었던
+            와잘알 친구에게도 물어보니 확실히 리슬링 품종인데 본인이 생각했던
+            느낌과 다르다고 하더라구요! 와린이인 저는 아무것도 모르고 그저
+            맛있게 먹었는데 ㅎㅎ 부담스럽지 않게 느껴지는 은은한 당도가 너무
+            매력적이었어요!
+            <br />
+            <br />
+            라벨 디자인이 너무 예뻐서 눈 여겨 보고 있었던 와이너리인데 어쩜
+            기다렸다는 듯이 구독와인으로 온 샤르도네! 평소 산미에 굉장히 민감한
+            편이라서 샤르도네 와인의 산미도 강하게 느껴졌지만 그럼에도 불구하고
+            열대과일 향이 너무 매력적이라서 해산물 요리랑 같이 맛있게 먹었습니다
+            ㅠㅠ많이 접해보지 않은 미국 와인에 대한 첫인상을 강하게 남겨 준 와인
+          </p>
+          <div class="review_member_wrap">
+            <div class="review_member">
+              <img src="./img/membericon.png" alt="회원기본아이콘" />
+              <span class="member_name">경우없는 올리브</span>
+            </div>
+            <span class="review_like_m"
+              ><i class="fa-regular fa-thumbs-up"></i>198</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="review_overlay_m" class="review_overlay2">
+      <div class="review_modal">
+        <div class="review_img">
+          <img src="./img/review2.webp" alt="리뷰이미지" />
+        </div>
+        <div class="review_detail_M">
+          <span class="report_function">신고 차단</span>
+          <h2>명절 전에 여유 좀 부려보네요</h2>
+          <p>
+            옐로우 등급 와인인데 이렇게 훌륭하네요!! <br /><br />
+            입 안에서 잘게 부셔지는 버블이 마치 파도가 치는 것만 같네요!!
+            <br /><br />
+            설날 전에 송파본점 방문해서 좋은 경험하네요.
+          </p>
+          <div class="review_member_wrap">
+            <div class="review_member">
+              <img src="./img/membericon.png" alt="회원기본아이콘" />
+              <span class="member_name">제임스본드</span>
+            </div>
+            <span class="review_like_m"
+              ><i class="fa-regular fa-thumbs-up"></i>187</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="review_overlay_m" class="review_overlay3">
+      <div class="review_modal">
+        <div class="review_img">
+          <img src="./img/review3.webp" alt="리뷰이미지" />
+        </div>
+        <div class="review_detail_M">
+          <span class="report_function">신고 차단</span>
+          <h2>2023년 첫 선물이 도착!!</h2>
+          <p>
+            프로스페 모푸 상트네 프리미에 크뤼 끌로 루소 <br />
+            이름도 엄청 긴 부르고뉴 와인이 도착!! <br />
+            23년의 첫 선물을 해준 퍼플독에게 감사 인사를 전합니다.
+          </p>
+          <div class="review_member_wrap">
+            <div class="review_member">
+              <img src="./img/membericon.png" alt="회원기본아이콘" />
+              <span class="member_name">제임스 본드</span>
+            </div>
+            <span class="review_like_m"
+              ><i class="fa-regular fa-thumbs-up"></i>157</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="review_overlay_m" class="review_overla4">
+      <div class="review_modal">
+        <div class="review_img">
+          <img src="./img/review4.webp" alt="리뷰이미지" />
+        </div>
+        <div class="review_detail_M">
+          <span class="report_function">신고 차단</span>
+          <h2>퍼플독 와인으로 신년 선물했어요!</h2>
+          <p>
+            지인 신년 선물로 바디감 높고 호불호 적은 스타일의 <br />
+            와인을 알아보다가 오코네 아나스타시를 선물했습니다! <br />
+            시그니처 패키지로 요청했는데 너무 고급스러워서 <br />
+            제가 갖고 싶을 정도였어요ㅠㅠ받으시는 분도 엄청 좋아하셨네요 :)
+            <br />
+            라벨에 봉황이 그려져 있어서 더 의미있었던 것 같아요! <br />
+            와인 선물이 필요하신 분들께 추천드립니다~
+          </p>
+          <div class="review_member_wrap">
+            <div class="review_member">
+              <img src="./img/membericon.png" alt="회원기본아이콘" />
+              <span class="member_name">춘식</span>
+            </div>
+            <span class="review_like_m"
+              ><i class="fa-regular fa-thumbs-up"></i>154</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="review_overlay_m" class="review_overlay5">
+      <div class="review_modal">
+        <div class="review_img">
+          <img src="./img/review5.webp" alt="리뷰이미지" />
+        </div>
+        <div class="review_detail_M">
+          <span class="report_function">신고 차단</span>
+          <h2>스페인의 맛이란 무엇인가</h2>
+          <p>
+            템프라니요, 가르나차, 틴타, 시라까지 4가지나 되는 품종이 블렌딩
+            되어서 궁금했다. 레드 2,3 스타일인데 많은 포도를 섞어 만들면서
+            나오는 복합미가 얼마나 풍부할지 경험해 보고 싶었다. 와인만 딱 처음에
+            한잔 먹으니 스페인 특유의 알코올이나 담배같은 많지 않고 붉은 과실의
+            향이 풍부하게 올라왔다. 바디감은 높지 않지만 향이 강해 맛이 강하게
+            느껴졌다. 치킨 한조각과 입에 또 넣으니 아주 환상의 콤비처럼 서로
+            입안에서 춤을 추네.....좋은 레드 2,3와인 하나 또 득..
+          </p>
+          <div class="review_member_wrap">
+            <div class="review_member">
+              <img src="./img/membericon.png" alt="회원기본아이콘" />
+              <span class="member_name">종서</span>
+            </div>
+            <span class="review_like_m"
+              ><i class="fa-regular fa-thumbs-up"></i>142</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <script>
       // 슬라이드영역
       var swiper = new Swiper(".menu_swiper", {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 10,
 
         pagination: {
