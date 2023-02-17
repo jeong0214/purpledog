@@ -19,20 +19,22 @@
       referrerpolicy="no-referrer"
     />
     <script src="./login.js" defer></script>
-    <script src="./review.js" defer></script>
     <script src="./search.js" defer></script>
+    <script src="./gnb_m.js" defer></script>
+    <script src="./review.js" defer></script>
+    <script src="./gnb.js" defer></script>
   </head>
   <body>
     <!-- 헤더 -->
     <header class="hd">
-      <div class="hd_menu">
+      <div class="hd_menu mw">
         <a href="#" class="logo"
           ><img src="./img/logo.svg" alt="퍼플독로고"
         /></a>
         <nav class="hd_gnb">
           <ul>
             <li>
-              <a href="#"
+              <a href="./subscribe_page.html"
                 ><img src="./img/subscribeicon.png" alt="정기구독icon" /><span
                   >정기구독</span
                 ></a
@@ -102,7 +104,9 @@
           ></i>
           <i id="btn-modal" class="fa-regular fa-user" title="로그인"></i>
 
-          <span><i class="fa-solid fa-bars" title="전체메뉴"></i></span>
+          <span
+            ><i id="btn_gnb_m" class="fa-solid fa-bars" title="전체메뉴"></i
+          ></span>
         </div>
       </div>
       <div id="search_modal" class="hd_search_menu">
@@ -117,13 +121,69 @@
         </div>
       </div>
     </header>
+    <!-- 사이드메뉴 -->
+    <div id="gnb_m" class="profile_frame">
+      <span class="push_bar_wrap"
+        ><i id="push_bar" class="fa-solid fa-chevron-right"></i
+      ></span>
+      <div class="profile">
+        <div class="member_info">
+          <span>로그인이 필요합니다</span>
+          <button><i class="fa-regular fa-user"></i></button>
+        </div>
+        <div class="profile_gnb">
+          <ul>
+            <li>
+              <a href="#none">정기구독</a>
+              <ul class="profile_sub">
+                <li><a href="#none">구독소개</a></li>
+                <li><a href="#none">구독방법</a></li>
+                <li><a href="#none">와인피드백</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">전체상품</a>
+              <ul class="profile_sub">
+                <li><a href="#none">와인별</a></li>
+                <li><a href="#none">나라별</a></li>
+                <li><a href="#none">추천상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">커뮤니티</a>
+              <ul class="profile_sub">
+                <li><a href="#none">리뷰</a></li>
+                <li><a href="#none">매거진</a></li>
+                <li><a href="#none">공지및이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">회사소개</a>
+              <ul class="profile_sub">
+                <li><a href="#none">about</a></li>
+                <li><a href="#none">store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">문의센터 </a>
+              <ul class="profile_sub">
+                <li><a href="#none">고객센터</a></li>
+                <li><a href="#none">b2b문의</a></li>
+                <li><a href="#none">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="#none"><img src="./img/middlebrmw.png" alt="이벤트배너" /></a>
+      </div>
+    </div>
     <!-- 메인부분 -->
     <main>
       <!-- 구독배너 -->
       <section class="subscribe_br">
         <div class="subscribe_fix_br">
           <img src="./img/fixbr.png" alt="고정배너이미지" />
-          <a href="#"><span>구독하기</span></a>
+          <a href="./subscribe_page.html"><span>구독하기</span></a>
         </div>
         <div class="swiper subscribe_slide_br">
           <div class="swiper-wrapper">
@@ -142,7 +202,7 @@
         </div>
       </section>
       <!-- 와인 메뉴 -->
-      <div class="menu_frame">
+      <section class="menu_frame mw">
         <div class="title_frame">
           <div class="title_first"><span>Recommendation</span></div>
           <div class="title_second">
@@ -629,12 +689,136 @@
                   </div>
                 </div>
               </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <a href="#none"></a>
+                  <div class="fornt">
+                    <span class="lebel lebel_b">B</span>
+                    <img
+                      src="./img/wine9.webp"
+                      alt="샤또 피네 생테밀리옹 그랑 크뤼"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">프랑스 레드</span>
+                      <span class="pd_info2"
+                        >샤또 피네 생테밀리옹 그랑 크뤼</span
+                      >
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>14%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>17-19°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p70"></span>
+                        <span>가벼움 무거움</span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p60"></span>
+                        <span>낮음 높음</span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p30"></span>
+                        <span>낮음 높음</span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span>평점</span>
+                      <div class="star_wrap">
+                        <div class="star_back">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="star star4">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <span>4.1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="wine">
+                  <a href="#none"></a>
+                  <div class="fornt">
+                    <span class="lebel lebel_y">Y</span>
+                    <img
+                      src="./img/wine10.webp"
+                      alt="바로사 밸리 그래블 트랙 GSM"
+                    />
+                    <div class="pd_detail">
+                      <span class="pd_info1">호주 레드</span>
+                      <span class="pd_info2">바로사 밸리 그래블 트랙 GSM</span>
+                      <span class="pd_info3">구독회원공개</span>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="star_detail">
+                      <p class="text text01">
+                        <span>알콜도수</span> <br /><span>15%</span>
+                      </p>
+                      <p class="text text02">
+                        <span>음용온도</span><br /><span>18-20°C</span>
+                      </p>
+                      <p class="grap text03">
+                        <span>바디감</span>
+                        <span class="p70"></span>
+                        <span>가벼움 무거움</span>
+                      </p>
+
+                      <p class="grap text04">
+                        <span>산미</span><span class="p50"></span>
+                        <span>낮음 높음</span>
+                      </p>
+                      <p class="grap text05">
+                        <span>당도</span><span class="p40"></span>
+                        <span>낮음 높음</span>
+                      </p>
+                    </div>
+                    <div class="star_Rating">
+                      <span>평점</span>
+                      <div class="star_wrap">
+                        <div class="star_back">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="star star4">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <span>4</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-button-next menu_next"></div>
             <div class="swiper-button-prev menu_prev"></div>
           </div>
         </div>
-      </div>
+      </section>
 
       <!-- 카테고리 -->
       <div class="category">
@@ -651,8 +835,7 @@
               ><span>나라별 모아보기</span></a
             >
           </li>
-        </ul>
-        <ul>
+
           <li class="category_icon">
             <a href="#none"
               ><span><img src="./img/wine.svg" alt="전체상품" /></span
@@ -669,11 +852,11 @@
       </div>
       <!-- 중간배너 -->
       <div class="event_br">
-        <a href="#">명품와인X명품작품 이벤트 안내 배너</a>
+        <a href="#"><img src="./img/middlebr.png" alt="" /></a>
       </div>
 
       <!-- 리뷰 -->
-      <div class="review_frame">
+      <section class="review_frame mw">
         <div class="title_frame">
           <div class="title_first"><span>Best Review</span></div>
           <div class="title_second">
@@ -745,9 +928,9 @@
             ></a>
           </div>
         </div>
-      </div>
+      </section>
       <!-- 매거진 -->
-      <div class="magazine_frame">
+      <section class="magazine_frame mw">
         <div class="title_frame">
           <div class="title_first"><span>Magazine</span></div>
           <div class="title_second">
@@ -823,10 +1006,10 @@
             ></a>
           </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
-      <div class="footer_wrap">
+      <div class="footer_wrap mw">
         <div class="footer_detail1">
           <img src="./img/Group.svg" alt="퍼플독로고" />
           <span>
@@ -1044,9 +1227,10 @@
       var swiper = new Swiper(".menu_swiper", {
         slidesPerView: 1,
         spaceBetween: 30,
-        // centeredSlides: true,
+        initialSlide: 2,
+        centeredSlides: true,
         // loop: true,
-        // loopAdditionalSlides: 1,
+        // loopAdditionalSlides: 2,
         rewind: true,
         autoplay: {
           delay: 2500,
@@ -1080,6 +1264,7 @@
         },
       });
       var swiper = new Swiper(".subscribe_slide_br", {
+        rewind: true,
         navigation: {
           nextEl: ".br_next",
           prevEl: ".br_prev",

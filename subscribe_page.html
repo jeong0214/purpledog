@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="./myreset.css" />
+  <link rel="stylesheet" href="./purpledog.css" />
+  <link rel="stylesheet" href="./subscribe_page.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <script src="./login.js" defer></script>
+  <script src="./search.js" defer></script>
+  <script src="./gnb_m.js" defer></script>
+  <body>
+    <header class="hd">
+      <div class="hd_menu mw">
+        <a href="./index.html" class="logo"
+          ><img src="./img/logo.svg" alt="퍼플독로고"
+        /></a>
+        <nav class="hd_gnb">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/subscribeicon.png" alt="정기구독icon" /><span
+                  >정기구독</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">구독소개</a></li>
+                <li><a href="#">구독방법</a></li>
+                <li><a href="#">와인 피드백</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/wineicon.png" alt="와인icon" /><span
+                  >와인</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">와인별</a></li>
+                <li><a href="#">국가별</a></li>
+                <li><a href="#">추천상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/communityicon.png" alt="커뮤니티icon" /><span
+                  >커뮤니티</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">공지및이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/companyicon.png" alt="회사소개icon" /><span
+                  >회사소개</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">about</a></li>
+                <li><a href="#">store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/inquiryicon.png" alt="문의icon" /><span
+                  >문의</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li>
+                  <a href="#">고객센터</a>
+                </li>
+                <li><a href="#">b2b문의</a></li>
+                <li><a href="#">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <i
+            id="btn-search"
+            class="fa-solid fa-magnifying-glass"
+            title="검색"
+          ></i>
+          <i id="btn-modal" class="fa-regular fa-user" title="로그인"></i>
+
+          <span
+            ><i id="btn_gnb_m" class="fa-solid fa-bars" title="전체메뉴"></i
+          ></span>
+        </div>
+      </div>
+      <div id="search_modal" class="hd_search_menu">
+        <div class="search_inner">
+          <form class="search_form">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="찾으시는 와인이 있으신가요?"
+            />
+          </form>
+        </div>
+      </div>
+    </header>
+    <!-- 사이드메뉴 -->
+    <div id="gnb_m" class="profile_frame">
+      <span class="push_bar_wrap"
+        ><i id="push_bar" class="fa-solid fa-chevron-right"></i
+      ></span>
+      <div class="profile">
+        <div class="member_info">
+          <span>로그인이 필요합니다</span>
+          <button><i class="fa-regular fa-user"></i></button>
+        </div>
+        <div class="profile_gnb">
+          <ul>
+            <li>
+              <a href="#none">정기구독</a>
+              <ul class="profile_sub">
+                <li><a href="#none">구독소개</a></li>
+                <li><a href="#none">구독방법</a></li>
+                <li><a href="#none">와인피드백</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">전체상품</a>
+              <ul class="profile_sub">
+                <li><a href="#none">와인별</a></li>
+                <li><a href="#none">나라별</a></li>
+                <li><a href="#none">추천상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">커뮤니티</a>
+              <ul class="profile_sub">
+                <li><a href="#none">리뷰</a></li>
+                <li><a href="#none">매거진</a></li>
+                <li><a href="#none">공지및이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">회사소개</a>
+              <ul class="profile_sub">
+                <li><a href="#none">about</a></li>
+                <li><a href="#none">store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#none">문의센터 </a>
+              <ul class="profile_sub">
+                <li><a href="#none">고객센터</a></li>
+                <li><a href="#none">b2b문의</a></li>
+                <li><a href="#none">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <a href="#none"><img src="./img/middlebrmw.png" alt="이벤트배너" /></a>
+      </div>
+    </div>
+    <main>
+      <section class="subscribe_categori_frame mw">
+        <div class="subscribe_categori_title">
+          <h2>퍼플독 구독 상품</h2>
+          <p>
+            모든 구독상품은 페이퍼,디지털 컨텐츠가 함께 제공됩니다. <br />
+            (GREEN DOUBLE은 페이퍼 컨텐츠 제외)
+          </p>
+          <div class="subscribe_categori_detail">
+            <div class="subscribe_service">
+              <img src="./img/b2b_card1.png" alt="고객 커스터마이징" />
+              <span class="subscribe_service_title">고객 커스터마이징</span>
+              <span class="subscribe_service_detail"
+                >1:1 상담을 통해 고객에게 <br />
+                최적화된 서비스를 <br />
+                제공해 드립니다.</span
+              >
+            </div>
+            <div class="subscribe_service">
+              <img src="./img/b2b_card2.png" alt="와인사전 서비스" />
+              <span class="subscribe_service_title">와인사전 서비스</span>
+              <span class="subscribe_service_detail"
+                >고객이 소장하고 있는 <br />
+                혹은 궁금한 와인의 정보를 <br />
+                제공해드립니다.</span
+              >
+            </div>
+            <div class="subscribe_service">
+              <img src="./img/b2b_card3.png" alt="와인 버틀러 서비스" />
+              <span class="subscribe_service_title">와인 버틀러 서비스</span>
+              <span class="subscribe_service_detail"
+                >일년 동안 열두번, 고객에게 <br />감동을 전달합니다.</span
+              >
+            </div>
+            <div class="subscribe_service">
+              <img src="./img/b2b_card4.png" alt="와인 구독 바우처" />
+              <span class="subscribe_service_title">와인 구독 바우처</span>
+              <span class="subscribe_service_detail"
+                >취향을 반영한 퍼플독의 와인구독 <br />바우처로 쉽고 편하게
+                와인을 <br />
+                즐기실 수 있습니다.</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="subscribe_categori">
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_g">THE GREEN</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_g">G</span>
+                <h2>THE GREEN DOUBLE</h2>
+                <p>매월 GREEN 등급의 동일한 와인 2병(1+1)이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 2병</span
+                    ><span class="month">6개월</span>
+                  </div>
+                  <span class="price">39,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_y">THE YELLOW</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_y">Y</span>
+                <h2>THE YELLOW SINGLE</h2>
+                <p>매월 YELLOW 등급의 와인 1병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 1병</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">39,000원</span>
+                </div>
+              </div>
+              <div class="grade">
+                <span class="lebel lebel_y">Y</span>
+                <h2>THE YELLOW DOUBLE</h2>
+                <p>매월 YELLOW 등급의 와인 2병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 2병</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">73,000원</span>
+                </div>
+              </div>
+              <div class="grade">
+                <span class="lebel lebel_y">Y</span>
+                <h2>THE YELLOW TRIPLE</h2>
+                <p>매월 YELLOW 등급의 와인 3병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 3병</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">105,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_b">THE BLUE</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_b">B</span>
+                <h2>THE BLUE</h2>
+                <p>매월 BLUE 등급의 와인 1병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 1병</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">68,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_c">THE CRIMSON</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_c">C</span>
+                <h2>THE CRIMSON</h2>
+                <p>매월 CRIMSON 등급의 와인 1병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">와인 1병</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">99,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_v">THE VIOLET</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_v">V</span>
+                <h2>THE VIOLET 20</h2>
+                <p>매월 VIOLET 등급의 와인 1병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">상담 후 결정</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">200,000원</span>
+                </div>
+              </div>
+              <div class="grade">
+                <span class="lebel lebel_v">V</span>
+                <h2>THE VIOLET 30</h2>
+                <p>매월 VIOLET 등급의 와인 1~2병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">상담 후 결정</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">300,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="subscribe">
+            <span class="subscribe_grade subscribe_grade_k">THE BLACK</span>
+            <div class="grade_wrap">
+              <div class="grade">
+                <span class="lebel lebel_k">K</span>
+                <h2>THE BLACK 50</h2>
+                <p>매월 BLACK 등급의 와인 1~2병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">상담 후 결정</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">500,000원</span>
+                </div>
+              </div>
+              <div class="grade">
+                <span class="lebel lebel_k">K</span>
+                <h2>THE BLACK 100</h2>
+                <p>매월 BLACK 등급의 와인 1~2병이 제공됩니다.</p>
+                <div class="grade_detail_wrap">
+                  <div class="grade_detail">
+                    <span class="bottle">상담 후 결정</span
+                    ><span class="month">3개월</span>
+                  </div>
+                  <span class="price">1,000,000원</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="information_use_frame">
+        <h3>퍼플독 이용안내</h3>
+        <div class="information_use_wrap">
+          <div class="information_use">
+            <img src="./img/online.png" alt="온라인이미지" />
+            <span class="information_title">온라인 상품주문/구독</span>
+            <span class="information_detail"
+              >최초 1회 매장방문 인증 후 상품 택배수령</span
+            >
+          </div>
+          <div class="information_use">
+            <img src="./img/offline.png" alt="오프라인이미지" />
+            <span class="information_title">오프라인 매장방문</span>
+            <span class="information_detail"
+              >오프라인 판매 및 전시,체험 등 다양한 컨텐츠 제공</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer_wrap mw">
+        <div class="footer_detail1">
+          <img src="./img/Group.svg" alt="퍼플독로고" />
+          <span>
+            (주)퍼플독 대표 : 박재정 법인등록번호 : 110111-6925824 <br />
+            사업자번호 : 215-87-92078 사업자번호(지점, 퍼플독 홍대) :
+            557-85-01671 통신판매업신고 : 2019-서울송파-2561 <br />
+            본사 : 서울특별시 강남구 테헤란로 521, 파르나스타워 29층 대표번호 :
+            02 6933-4772 ~ 3 <br />
+            운영시간(한국) 09:30 ~ 18:30 주말/공휴일 휴무
+          </span>
+        </div>
+        <div class="footer_detail2">
+          <div class="footer_link">
+            <a href="#">공지사항</a>
+            <a href="#">FAQ</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <div class="footer_icon">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <img class="qrcode" src="./img/qrcode.svg" alt="QR코드" />
+        </div>
+      </div>
+    </footer>
+    <!-- 로그인 팝업 -->
+    <div id="modal" class="login_frame">
+      <div class="login_wrap">
+        <div class="login_page">
+          <div class="signin">
+            <h2>sign in</h2>
+            <form class="padding">
+              <input class="login_input" type="text" placeholder="username" />
+              <input class="login_input" type="text" placeholder="password" />
+              <label for="remember" class="checkbox">
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  id="remember"
+                />remember me
+              </label>
+              <button id="login" class="button bt_sub">login</button>
+            </form>
+          </div>
+        </div>
+        <div class="login_page_r">
+          <i id="close" class="fa-solid fa-xmark"></i>
+          <img
+            class="purpledoglogo"
+            src="./img/purpledoglogo.png"
+            alt="퍼플독 로고"
+          />
+          <button class="button button_r" id="singup">SIGN UP</button>
+          <div class="login_icon">
+            <a href="#"><img src="./img/navericon.png" alt="네이버" /></a>
+            <a href="#"><img src="./img/kakaoicon.png" alt="카카오" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+:root {
+  --mw: 1440px;
+  --font: "Noto Sans KR", sans-serif;
+  --font1: "Noto Serif KR", serif;
+  --main_c1: #a55e8f;
+  --main_c2: #9f4ea3;
+  --main_c3: #2b2044;
+  --gray_AE: #aeaeae;
+  --gray_ea: #eaeaea;
+  --gray_d9: #d9d9d9;
+  --font_c1: #ffffff;
+  --font_c2: #000000;
+  --font_c3: #aeaeae;
+}
+.mw {
+  max-width: var(--mw);
+  margin: auto;
+  width: calc(100% - 2rem);
+}
+.subscribe_categori_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--font);
+}
+.subscribe_categori_title h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.subscribe_categori_title p {
+  color: var(--main_c1);
+  padding: 1.5rem;
+  letter-spacing: 2px;
+}
+.subscribe_categori_detail {
+  display: flex;
+  justify-content: center;
+}
+.subscribe_service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 16%;
+  height: 100%;
+}
+.subscribe_service img {
+  display: block;
+  width: 100px;
+}
+.subscribe_service_title {
+  display: flex;
+  padding: 0.5rem;
+  font-weight: bold;
+  color: var(--main_c2);
+}
+.subscribe_service_detail {
+  font-size: 0.8rem;
+  color: var(--font_c3);
+}
+.subscribe_categori {
+  border-top: 1px solid var(--gray_AE);
+  margin-top: 100px;
+  width: 100%;
+}
+.subscribe {
+  padding: 1rem;
+  width: 100%;
+}
+.subscribe_grade {
+  font-family: var(--font1);
+  font-size: 1.3rem;
+  margin-left: 2rem;
+}
+.grade {
+  font-family: var(--font);
+  position: relative;
+  padding: 0.5rem 0.5rem 0.5rem 3rem;
+  background-color: #eaeaea50;
+  border-radius: 1rem;
+  width: 45%;
+  /* height: 150px; */
+  margin: 1rem 2rem;
+  box-shadow: 1px 1px 10px #00000050;
+  cursor: pointer;
+}
+.grade_wrap {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.grade .lebel {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  padding: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--font_c1);
+  font-weight: bold;
+}
+.grade h2 {
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.grade p {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  color: var(--font_c3);
+}
+.grade_detail_wrap {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.grade_detail {
+  width: 150px;
+  display: flex;
+  color: #9f4ea3;
+}
+.bottle {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  margin-right: 0.3rem;
+}
+.month {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+.price {
+  font-weight: bold;
+  padding: 0.3rem;
+}
+.subscribe_grade_g {
+  color: #469a4c;
+}
+.subscribe_grade_y {
+  color: #f4c821;
+}
+.subscribe_grade_b {
+  color: #1c6cab;
+}
+.subscribe_grade_c {
+  color: #c9164e;
+}
+.subscribe_grade_v {
+  color: #7b3484;
+}
+.subscribe_grade_k {
+  color: #181818;
+}
+@media (max-width: 1370px) {
+  .grade {
+    width: 100%;
+  }
+}
+@media (max-width: 915px) {
+  .subscribe_categori_detail {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+  .subscribe_service {
+    width: calc(50% - 4rem);
+  }
+}
+.information_use_frame {
+  margin: auto;
+  max-width: 1920px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-position: center;
+  background-image: url(./img/information.png);
+  background-repeat: no-repeat;
+  color: var(--font_c1);
+  font-family: var(--font);
+}
+.information_use_frame h3 {
+  padding: 3rem;
+  font-size: 2rem;
+}
+.information_use_wrap {
+  display: flex;
+}
+.information_use {
+  display: flex;
+  margin: 1rem 5rem;
+  flex-direction: column;
+}
+.information_use img {
+  width: 105%;
+}
+.information_title {
+  font-size: 1.2rem;
+}
+.information_detail {
+  font-weight: 300;
+}
+@media (max-width: 1100px) {
+  .information_use_frame h3 {
+    padding: 2rem;
+  }
+  .information_use_wrap {
+    flex-direction: column;
+  }
+  .information_use {
+    align-items: center;
+    text-align: center;
+  }
+  .information_use img {
+    width: 50%;
+  }
+}
