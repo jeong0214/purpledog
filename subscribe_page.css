@@ -65,11 +65,7 @@
 }
 .subscribe_categori {
   border-top: 1px solid var(--gray_AE);
-<<<<<<< HEAD
   margin: 100px 0;
-=======
-  margin:100px 0;
->>>>>>> a40cdcdf4104c57c327b1117ddff712dd1079ad8
   width: 100%;
 }
 .subscribe {
@@ -230,23 +226,14 @@
   }
 }
 @media (max-width: 580px) {
-<<<<<<< HEAD
   .information_use img {
-=======
-  .information_use img{
->>>>>>> a40cdcdf4104c57c327b1117ddff712dd1079ad8
     /* width: 100px; */
   }
 }
 /* 구독팝업 */
 
-<<<<<<< HEAD
 #matching_overlay.off {
   display: none;
-=======
-#matching_overlay.on {
-  display: flex;
->>>>>>> a40cdcdf4104c57c327b1117ddff712dd1079ad8
 }
 #matching_overlay {
   position: fixed;
@@ -254,11 +241,7 @@
   top: 0px;
   width: 100%;
   height: 100vh;
-<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.6);
-=======
-  background-color: #00000050;
->>>>>>> a40cdcdf4104c57c327b1117ddff712dd1079ad8
   display: none;
   justify-content: center;
   align-items: center;
@@ -304,7 +287,6 @@
 }
 .matching span {
   margin-bottom: 2.3rem;
-<<<<<<< HEAD
 }
 /* step1 */
 #step1_modal.on{
@@ -426,6 +408,3 @@
 .btn-recommend:focus span{
   color: var(--font_c1);
 }
-=======
-}   
->>>>>>> a40cdcdf4104c57c327b1117ddff712dd1079ad8
