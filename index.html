@@ -118,6 +118,7 @@
               placeholder="찾으시는 와인이 있으신가요?"
             />
           </form>
+          <button id="search">search</button>
         </div>
       </div>
     </header>
@@ -131,49 +132,7 @@
           <span>로그인이 필요합니다</span>
           <button><i class="fa-regular fa-user"></i></button>
         </div>
-        <div class="profile_gnb">
-          <ul>
-            <li>
-              <a href="#none">정기구독</a>
-              <ul class="profile_sub">
-                <li><a href="#none">구독소개</a></li>
-                <li><a href="#none">구독방법</a></li>
-                <li><a href="#none">와인피드백</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">전체상품</a>
-              <ul class="profile_sub">
-                <li><a href="#none">와인별</a></li>
-                <li><a href="#none">나라별</a></li>
-                <li><a href="#none">추천상품</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">커뮤니티</a>
-              <ul class="profile_sub">
-                <li><a href="#none">리뷰</a></li>
-                <li><a href="#none">매거진</a></li>
-                <li><a href="#none">공지및이벤트</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">회사소개</a>
-              <ul class="profile_sub">
-                <li><a href="#none">about</a></li>
-                <li><a href="#none">store</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#none">문의센터 </a>
-              <ul class="profile_sub">
-                <li><a href="#none">고객센터</a></li>
-                <li><a href="#none">b2b문의</a></li>
-                <li><a href="#none">가맹문의</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+        <nav id="M_gnb" class="profile_gnb"></nav>
         <a href="#none"><img src="./img/middlebrmw.png" alt="이벤트배너" /></a>
       </div>
     </div>
@@ -852,7 +811,7 @@
       </div>
       <!-- 중간배너 -->
       <div class="event_br">
-        <a href="#"><img src="./img/middlebr.png" alt="" /></a>
+        <a href="#"><img src="./img/middlebr.png" alt="이벤트배너" /></a>
       </div>
 
       <!-- 리뷰 -->
@@ -876,7 +835,7 @@
                 </p>
               </div>
             </li>
-            <li class="review2">
+            <li id="btn-review2" class="review2">
               <div>
                 <img src="./img/review2.webp" alt="리뷰이미지" />
                 <p>
@@ -994,7 +953,7 @@
             </li>
             <li class="magazine8">
               <div>
-                <a href="#"></a>
+                <a href="#none"></a>
                 <h2>최은미 작가님 소개</h2>
                 <img src="./img/magazine8.webp" alt="매거진이미지" />
               </div>
@@ -1057,7 +1016,6 @@
           </div>
         </div>
         <div class="login_page_r">
-          <i id="close" class="fa-solid fa-xmark"></i>
           <img
             class="purpledoglogo"
             src="./img/purpledoglogo.png"
@@ -1110,7 +1068,7 @@
         </div>
       </div>
     </div>
-    <div id="review_overlay_m" class="review_overlay2">
+    <!-- <div id="review_overlay_m" class="review_overlay2">
       <div class="review_modal">
         <div class="review_img">
           <img src="./img/review2.webp" alt="리뷰이미지" />
@@ -1218,7 +1176,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 

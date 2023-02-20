@@ -1,9 +1,11 @@
+const modal = document.getElementById("modal");
 const btnModal = document.getElementById("btn-modal");
-const conModal = document.getElementById("modal");
-const close = document.getElementById("close");
 btnModal.addEventListener("click", (e) => {
-  conModal.classList.add("on");
+  modal.style.display = "flex";
 });
-close.addEventListener("click", (e) => {
-  conModal.classList.toggle("on");
+modal.addEventListener("click", (e) => {
+  const evTarget = e.target;
+  if (evTarget.classList.contains("login_frame")) {
+    modal.style.display = "none";
+  }
 });
