@@ -18,11 +18,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="./img/purpledog1.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./login.js" defer></script>
     <script src="./search.js" defer></script>
     <script src="./gnb_m.js" defer></script>
     <script src="./review.js" defer></script>
     <script src="./gnb.js" defer></script>
+    <script src="./Swiper.js" defer></script>
   </head>
   <body>
     <!-- 헤더 -->
@@ -1177,57 +1180,5 @@
         </div>
       </div>
     </div> -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-
-    <script>
-      // 슬라이드영역
-      var swiper = new Swiper(".menu_swiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        initialSlide: 2,
-        centeredSlides: true,
-        // loop: true,
-        // loopAdditionalSlides: 2,
-        rewind: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        breakpoints: {
-          540: {
-            slidesPerView: 2,
-            spaceBetween: 10,
-          },
-          640: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          960: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          1180: {
-            slidesPerView: 5,
-            spaceBetween: 60,
-          },
-        },
-        navigation: {
-          nextEl: ".menu_next",
-          prevEl: ".menu_prev",
-        },
-      });
-      var swiper = new Swiper(".subscribe_slide_br", {
-        rewind: true,
-        navigation: {
-          nextEl: ".br_next",
-          prevEl: ".br_prev",
-        },
-      });
-    </script>
   </body>
 </html>

@@ -6,15 +6,11 @@ const next1 = document.getElementById("btn-next2");
 const step1_modal = document.getElementById("step1_modal");
 const step2_modal = document.getElementById("step2_modal");
 
-
-
 grade.forEach(function (item, i, test) {
   item.addEventListener("click", function () {
     matching.style.display = "flex";
   });
 });
-
-console.log(grade);
 
 matching.addEventListener("click", (e) => {
   const evTarget = e.target;
@@ -34,5 +30,5 @@ next.addEventListener("click", (e) => {
 });
 
 next1.addEventListener("click", (e) => {
-  step2_modal.classList.toggle("on");
+  window.location = "./payment_page.html";
 });

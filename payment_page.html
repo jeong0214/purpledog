@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>purpledog</title>
+    <link rel="stylesheet" href="./myreset.css" />
+    <link rel="stylesheet" href="./purpledog.css" />
+    <link rel="stylesheet" href="./subscribe_page.css" />
+    <link rel="stylesheet" href="./payment_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./img/purpledog1.ico" rel="shortcut icon" type="image/x-icon" />
+    <script src="./login.js" defer></script>
+    <script src="./search.js" defer></script>
+    <script src="./gnb_m.js" defer></script>
+    <script src="./gnb.js" defer></script>
+    <script src="./matching.js" defer></script>
+  </head>
+  <body>
+    <header class="hd">
+      <div class="hd_menu mw">
+        <a href="./index.html" class="logo"
+          ><img src="./img/logo.svg" alt="퍼플독로고"
+        /></a>
+        <nav class="hd_gnb">
+          <ul>
+            <li>
+              <a href="#"
+                ><img src="./img/subscribeicon.png" alt="정기구독icon" /><span
+                  >정기구독</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">구독소개</a></li>
+                <li><a href="#">구독방법</a></li>
+                <li><a href="#">와인 피드백</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/wineicon.png" alt="와인icon" /><span
+                  >와인</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">와인별</a></li>
+                <li><a href="#">국가별</a></li>
+                <li><a href="#">추천상품</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/communityicon.png" alt="커뮤니티icon" /><span
+                  >커뮤니티</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">리뷰</a></li>
+                <li><a href="#">매거진</a></li>
+                <li><a href="#">공지및이벤트</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/companyicon.png" alt="회사소개icon" /><span
+                  >회사소개</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li><a href="#">about</a></li>
+                <li><a href="#">store</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="./img/inquiryicon.png" alt="문의icon" /><span
+                  >문의</span
+                ></a
+              >
+              <ul class="hd_sub">
+                <li>
+                  <a href="#">고객센터</a>
+                </li>
+                <li><a href="#">b2b문의</a></li>
+                <li><a href="#">가맹문의</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="icons">
+          <i
+            id="btn-search"
+            class="fa-solid fa-magnifying-glass"
+            title="검색"
+          ></i>
+          <i id="btn-modal" class="fa-regular fa-user" title="로그인"></i>
+
+          <span
+            ><i id="btn_gnb_m" class="fa-solid fa-bars" title="전체메뉴"></i
+          ></span>
+        </div>
+      </div>
+      <div id="search_modal" class="hd_search_menu">
+        <div class="search_inner">
+          <form class="search_form">
+            <input
+              class="search_input"
+              type="text"
+              placeholder="찾으시는 와인이 있으신가요?"
+            />
+          </form>
+          <button id="search">search</button>
+        </div>
+      </div>
+    </header>
+    <!-- 사이드메뉴 -->
+    <div id="gnb_m" class="profile_frame">
+      <span class="push_bar_wrap"
+        ><i id="push_bar" class="fa-solid fa-chevron-right"></i
+      ></span>
+      <div class="profile">
+        <div class="member_info">
+          <span>로그인이 필요합니다</span>
+          <button><i class="fa-regular fa-user"></i></button>
+        </div>
+        <nav id="M_gnb" class="profile_gnb"></nav>
+        <a href="#none"><img src="./img/middlebrmw.png" alt="이벤트배너" /></a>
+      </div>
+    </div>
+    <main>
+      <section class="order mw">
+        <h5>주문 정보</h5>
+        <div>
+          <span class="order_detail">이름</span>
+          <input class="order_input1" type="text" placeholder="이름 입력" />
+        </div>
+        <div>
+          <span class="order_detail">연락처</span>
+          <input class="order_input1" type="text" placeholder="연락처 입력" />
+        </div>
+        <div>
+          <span class="order_detail">주민등록번호</span>
+          <form>
+            <input
+              class="order_input1"
+              type="text"
+              placeholder="주민등록번호 앞자리"
+            />
+            <span>-</span>
+            <input class="order_input1" type="text" placeholder="*******" />
+          </form>
+        </div>
+        <div>
+          <span class="order_detail">주소 입력</span>
+          <select name="address">
+            <option value="001">서울특별시</option>
+            <option value="002">부산광역시</option>
+            <option value="003">대구광역시</option>
+            <option value="004">인천광역시</option>
+            <option value="005">광주광역시</option>
+            <option value="006">대전광역시</option>
+            <option value="007">울산광역시</option>
+            <option value="008">세종특별자치시</option>
+            <option value="009">경기도</option>
+            <option value="010">강원도</option>
+            <option value="011">충청북도</option>
+            <option value="012">충청남도</option>
+            <option value="013">전라북도</option>
+            <option value="014">전라남도</option>
+            <option value="015">경상북도</option>
+            <option value="016">경상남도</option>
+            <option value="017">제주특별자치도</option>
+          </select>
+          <input class="order_input1" type="text" placeholder="상세주소 입력" />
+        </div>
+        <div class="card_wrap">
+          <span class="order_detail">카드</span>
+          <select name="card_n" id="card">
+            <option value="001">BC카드</option>
+            <option value="002">KB카드</option>
+            <option value="003">NH카드</option>
+            <option value="004">하나SK카드</option>
+            <option value="005">삼성카드</option>
+            <option value="006">신한카드</option>
+            <option value="007">현대카드</option>
+            <option value="008">롯데카드</option>
+            <option value="009">우리카드</option>
+            <option value="010">수협카드</option>
+            <option value="011">한미카드</option>
+            <option value="012">씨티카드</option>
+            <option value="013">신세계한미</option>
+            <option value="014">신협체크카트</option>
+            <option value="015">외환카드</option>
+            <option value="016">제주카드</option>
+            <option value="017">전북카드</option>
+            <option value="018">산은캐피탈</option>
+          </select>
+          <form>
+            <input class="order_input2" type="text" placeholder="****" />
+            <span>-</span>
+            <input class="order_input2" type="text" placeholder="****" />
+            <span>-</span>
+            <input class="order_input2" type="text" placeholder="****" />
+            <span>-</span>
+            <input class="order_input2" type="text" placeholder="****" />
+          </form>
+        </div>
+        <div>
+          <span class="order_detail">카드 유효기간</span>
+          <input class="order_input3" type="month" />
+        </div>
+        <div class="btn_wrap"><button class="next_p">다음</button></div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_wrap mw">
+        <div class="footer_detail1">
+          <img src="./img/Group.svg" alt="퍼플독로고" />
+          <span>
+            (주)퍼플독 대표 : 박재정 법인등록번호 : 110111-6925824 <br />
+            사업자번호 : 215-87-92078 사업자번호(지점, 퍼플독 홍대) :
+            557-85-01671 통신판매업신고 : 2019-서울송파-2561 <br />
+            본사 : 서울특별시 강남구 테헤란로 521, 파르나스타워 29층 대표번호 :
+            02 6933-4772 ~ 3 <br />
+            운영시간(한국) 09:30 ~ 18:30 주말/공휴일 휴무
+          </span>
+        </div>
+        <div class="footer_detail2">
+          <div class="footer_link">
+            <a href="#">공지사항</a>
+            <a href="#">FAQ</a>
+            <a href="#">개인정보처리방침</a>
+            <a href="#">이용약관</a>
+            <div class="footer_icon">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <img class="qrcode" src="./img/qrcode.svg" alt="QR코드" />
+        </div>
+      </div>
+    </footer>
+    <!-- 로그인 팝업 -->
+    <div id="modal" class="login_frame">
+      <div class="login_wrap">
+        <div class="login_page">
+          <div class="signin">
+            <h2>sign in</h2>
+            <form class="padding">
+              <input class="login_input" type="text" placeholder="username" />
+              <input class="login_input" type="text" placeholder="password" />
+              <label for="remember" class="checkbox">
+                <input
+                  class="checkbox_input"
+                  type="checkbox"
+                  id="remember"
+                />remember me
+              </label>
+              <button id="login" class="button bt_sub">login</button>
+            </form>
+          </div>
+        </div>
+        <div class="login_page_r">
+          <img
+            class="purpledoglogo"
+            src="./img/purpledoglogo.png"
+            alt="퍼플독 로고"
+          />
+          <button class="button button_r" id="singup">SIGN UP</button>
+          <div class="login_icon">
+            <a href="#"><img src="./img/navericon.png" alt="네이버" /></a>
+            <a href="#"><img src="./img/kakaoicon.png" alt="카카오" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

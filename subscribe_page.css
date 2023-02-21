@@ -84,7 +84,6 @@
   background-color: #eaeaea50;
   border-radius: 1rem;
   width: 600px;
-  /* height: 150px; */
   margin: 1rem 2rem;
   box-shadow: 1px 1px 10px #00000050;
   cursor: pointer;
@@ -225,11 +224,6 @@
     width: 200px;
   }
 }
-@media (max-width: 580px) {
-  .information_use img {
-    /* width: 100px; */
-  }
-}
 /* 구독팝업 */
 
 #matching_overlay.off {
@@ -289,7 +283,7 @@
   margin-bottom: 2.3rem;
 }
 /* step1 */
-#step1_modal.on{
+#step1_modal.on {
   display: flex;
 }
 #step1_modal {
@@ -310,7 +304,7 @@
   border-radius: 1rem;
   overflow: hidden;
 }
-.step{
+.step {
   padding: 2rem;
   display: flex;
   flex-direction: column;
@@ -346,7 +340,7 @@
   background-color: #ffffff;
   border: 1px solid #ba7fd4;
   font-size: 1rem;
-  cursor : pointer;
+  cursor: pointer;
 }
 .bottle_count:focus {
   background-color: #deb6de;
@@ -363,7 +357,7 @@
   cursor: pointer;
 }
 /* step2 */
-#step2_modal.on{
+#step2_modal.on {
   display: flex;
 }
 #step2_modal {
@@ -393,7 +387,7 @@
   background-color: #ffffff;
   border: 1px solid #ba7fd4;
   font-size: 1rem;
-  cursor : pointer;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -405,6 +399,6 @@
   background-color: #deb6de;
   color: var(--font_c1);
 }
-.btn-recommend:focus span{
+.btn-recommend:focus span {
   color: var(--font_c1);
 }

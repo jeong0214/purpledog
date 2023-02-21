@@ -1,0 +1,90 @@
+@charset 'utf-8';
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap");
+
+:root {
+  --mw: 1440px;
+  --font: "Noto Sans KR", sans-serif;
+  --font1: "Noto Serif KR", serif;
+  --main_c1: #a55e8f;
+  --main_c2: #9f4ea3;
+  --main_c3: #2b2044;
+  --gray_AE: #aeaeae;
+  --gray_ea: #eaeaea;
+  --gray_d9: #d9d9d9;
+  --font_c1: #ffffff;
+  --font_c2: #000000;
+  --font_c3: #aeaeae;
+}
+.mw {
+  max-width: var(--mw);
+  margin: auto;
+  width: calc(100% - 2rem);
+}
+
+main {
+  margin: 8.5rem 0 1rem 0;
+}
+.order {
+  border-radius: 2rem;
+  background-color: #f3dcec;
+  width: 100%;
+  padding: 3rem;
+}
+.order h5 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5rem;
+}
+.order div {
+  padding: 2rem;
+  border-bottom: 2px solid var(--gray_AE);
+  display: flex;
+  flex-direction: column;
+}
+.order_detail {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.order_input1 {
+  border: none;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+}
+.order select {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.order_input2 {
+  border: none;
+  border-radius: 0.5rem;
+  width: 10%;
+  padding: 0.4rem;
+  text-align: center;
+}
+
+.order_input3 {
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+.order .btn_wrap {
+  border: none;
+  display: flex;
+  align-items: center;
+}
+.next_p {
+  font-size: 1.5rem;
+  width: 200px;
+  padding: 1rem;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  background-color: var(--gray_ea);
+}
+
+@media (max-width: 970) {
+}
