@@ -286,6 +286,7 @@
 .profile_gnb > ul > li:hover .profile_sub {
   display: block;
 }
+
 .profile_sub {
   display: none;
 }
@@ -741,7 +742,7 @@ main {
     height: 500px;
   }
 }
-@media (max-width :450px) {
+@media (max-width: 450px) {
   .event_br {
     background-image: url(./img/middlebrmw.png);
     background-size: cover;
